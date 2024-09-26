@@ -89,9 +89,7 @@ public int magia(int tipo){
 public void atacar(Guerreiro pAtacado, int tipoMagia){
     pAtacado.sofrerDano(magia(tipoMagia));
 }
-public void atacar(Viking pAtacado, int ataque){
-    pAtacado.sofrerDano(ataque);
-}
+
 public void atacar(Mago pAtacado, int ataque){
     pAtacado.sofrerDano(ataque);
 }

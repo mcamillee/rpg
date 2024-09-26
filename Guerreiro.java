@@ -157,9 +157,6 @@ public class Guerreiro {
         public void atacar(Mago pAtacado, int ataque){
             pAtacado.sofrerDano(ataque);
     }
-    public void atacar(Viking pAtacado, int ataque){
-        pAtacado.sofrerDano(ataque);
-}
 public void atacar(Guerreiro pAtacado, int ataque){
     pAtacado.sofrerDano(ataque);
 }

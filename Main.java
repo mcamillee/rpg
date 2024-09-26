@@ -21,7 +21,7 @@ guerreiro.imprimirEstatisticas();
 viking.imprimirEstatisticas();
 
 mago.atacar(guerreiro, 1);
-guerreiro.atacar(mago, 2);
+guerreiro.atacar(viking, 2);
 guerreiro.escudo(mago.magia(1));
 
 viking.LancarMachado(mago);

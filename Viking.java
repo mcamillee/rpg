@@ -9,6 +9,16 @@ public class Viking extends Guerreiro{
       
     }
 
+    @Override
+    public void imprimirEstatisticas(){
+        System.out.println("-> VIKING");
+    System.out.println("Nome: " + this.getNome());
+    System.out.println("HP " + this.getPontosDeVida());
+    System.out.println("Estamina: " + this.getPontosDeEstamina());
+    System.out.println("Resistência do escudo " + this.getResistencia());
+    System.out.print("/n");
+    }
+
 @Override
 public int ataque(int tipo){
     switch (tipo){
@@ -57,11 +67,6 @@ public int ataque(int tipo){
                 pAtacado.sofrerDano(80);
     }
 
-    public void LancarMachado(Viking pAtacado){
-        if(this.getPontosDeVida() >0 &&this.getPontosDeEstamina() >= 60)
-                this.setPontosDeEstamina(getPontosDeEstamina() - 60) ;
-                pAtacado.sofrerDano(80);
-    }
 
 @Override
 public void vivomortoGuerreiro(){
